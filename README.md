@@ -91,7 +91,7 @@ DaraBricks_Project/
 
 ## ⭐ Gold Layer — Star Schema
 
-![Data Model](docs/data_model.svg)
+![Data Model](DaraBricks_Project_docs/docs/data_model.svg)
 
 Full column-level documentation is in [`docs/data_catalog.md`](docs/data_catalog.md).
 
