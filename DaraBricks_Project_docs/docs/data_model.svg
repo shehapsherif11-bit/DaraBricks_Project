@@ -1,0 +1,48 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" fill="#12161f"/>
+  <text x="30" y="40" fill="#f4f6fa" font-size="20" font-weight="700">Gold Layer — Star Schema</text>
+  <text x="30" y="62" fill="#8b93a7" font-size="12">workspace.gold</text>
+
+  <!-- fact table center -->
+  <g>
+    <rect x="360" y="200" width="180" height="200" rx="10" fill="#c99d2e"/>
+    <rect x="360" y="200" width="180" height="34" rx="10" fill="#a67c1a"/>
+    <text x="450" y="223" fill="#2a2000" font-size="14" font-weight="700" text-anchor="middle">fact_sales</text>
+    <text x="378" y="256" fill="#2a2000" font-size="11.5">order_number</text>
+    <text x="378" y="276" fill="#2a2000" font-size="11.5">customer_key (FK)</text>
+    <text x="378" y="296" fill="#2a2000" font-size="11.5">product_key (FK)</text>
+    <text x="378" y="316" fill="#2a2000" font-size="11.5">order_date / ship_date</text>
+    <text x="378" y="336" fill="#2a2000" font-size="11.5">sales_amount</text>
+    <text x="378" y="356" fill="#2a2000" font-size="11.5">sales_quantity</text>
+    <text x="378" y="376" fill="#2a2000" font-size="11.5">sales_price</text>
+  </g>
+
+  <!-- dim customers -->
+  <g>
+    <rect x="60" y="80" width="220" height="170" rx="10" fill="#d7dbe0"/>
+    <rect x="60" y="80" width="220" height="34" rx="10" fill="#a7adb8"/>
+    <text x="170" y="103" fill="#22242a" font-size="14" font-weight="700" text-anchor="middle">dim_customers</text>
+    <text x="80" y="136" fill="#22242a" font-size="11.5">customer_key (PK)</text>
+    <text x="80" y="156" fill="#22242a" font-size="11.5">customer_id / number</text>
+    <text x="80" y="176" fill="#22242a" font-size="11.5">first_name / last_name</text>
+    <text x="80" y="196" fill="#22242a" font-size="11.5">gender / marital_status</text>
+    <text x="80" y="216" fill="#22242a" font-size="11.5">country</text>
+  </g>
+
+  <!-- dim products -->
+  <g>
+    <rect x="620" y="80" width="220" height="170" rx="10" fill="#d7dbe0"/>
+    <rect x="620" y="80" width="220" height="34" rx="10" fill="#a7adb8"/>
+    <text x="730" y="103" fill="#22242a" font-size="14" font-weight="700" text-anchor="middle">dim_products</text>
+    <text x="640" y="136" fill="#22242a" font-size="11.5">product_key (PK)</text>
+    <text x="640" y="156" fill="#22242a" font-size="11.5">product_id / number / name</text>
+    <text x="640" y="176" fill="#22242a" font-size="11.5">category / subcategory</text>
+    <text x="640" y="196" fill="#22242a" font-size="11.5">product_line</text>
+    <text x="640" y="216" fill="#22242a" font-size="11.5">maintenance_flag</text>
+  </g>
+
+  <line x1="280" y1="180" x2="378" y2="260" stroke="#8b93a7" stroke-width="2"/>
+  <line x1="620" y1="180" x2="522" y2="260" stroke="#8b93a7" stroke-width="2"/>
+
+  <text x="450" y="440" fill="#5b6274" font-size="11" text-anchor="middle">Two dimensions, one fact — surrogate keys generated with xxhash64 during the Silver → Gold transform.</text>
+</svg>
