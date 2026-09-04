@@ -10,6 +10,7 @@ A modern **Lakehouse** built on Databricks that turns raw CRM and ERP CSV export
 This is a portfolio project: it demonstrates end-to-end data engineering (ingestion, cleansing, modeling) on a lakehouse stack, in contrast to the traditional SQL Server data warehouse approach.
 
 ---
+![Pipeline Flow](DaraBricks_Project_docs/docs/pipeline_flow.svg)
 
 ## 🏗️ Architecture
 
