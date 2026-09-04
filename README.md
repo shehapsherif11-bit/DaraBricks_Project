@@ -13,7 +13,7 @@ This is a portfolio project: it demonstrates end-to-end data engineering (ingest
 
 ## 🏗️ Architecture
 
-![Data Architecture](DaraBricks%20Project%20docs/data_architecture.png)
+![Data Architecture](DaraBricks_Project_docs/docs/data_architecture.svg)
 
 1. **🥉 Bronze** — Raw data landed as-is from CRM and ERP CSV files into Delta tables. No transformations; this is the immutable source of truth.
 2. **🥈 Silver** — Cleansing, standardization, and business-rule fixes: trimming, deduplication, type casting, code-to-label normalization (e.g. `M` → `Married`, `DE` → `Germany`), and invalid-date handling.
